@@ -18,8 +18,12 @@
     top: 0;
     left: 0;
     z-index: 9999; /* Memastikan navbar berada di atas elemen lain */
-    font-size: 1.3rem ;
 }
+.navbar-toggler {
+    padding: 0.2rem 0.4rem; /* kecilkan ruang di dalam tombol */
+    font-size: 0.8rem;      /* kecilkan ikon hamburger */
+    line-height: 1;         /* biar gak terlalu tinggi */
+  }
 
 /* Beri padding agar konten tidak tertutup navbar */
 #Home,
