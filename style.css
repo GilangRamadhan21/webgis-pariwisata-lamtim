@@ -1,0 +1,124 @@
+/* Styling untuk banner */
+.banner {
+    background: url("gambar/bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Memastikan navbar berada di atas elemen lain */
+}
+
+/* Beri padding agar konten tidak tertutup navbar */
+#Home,
+#Destinasi, 
+#Galeri, 
+#MapPariwisata, 
+#Kontak {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+/* Beri ukuran pada div map */
+#map {
+    height: 80vh;
+    width: 80vw;
+    z-index: 0;
+}
+
+/* Menyesuaikan posisi kontrol layer pada Leaflet */
+.leaflet-control-layers {
+    right: 20px !important; /* Geser sedikit ke kiri */
+}
+
+.profile-img {
+    width: 200px; /* Sesuaikan ukuran foto */
+    height: 200px;
+    border-radius: 50%; /* Membuatnya bulat */
+    border: 2px solid #000; /* Warna border hitam */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+  }
+  
+
+  /* Gaya untuk ikon media sosial */
+.social {
+    font-size: 24px; /* Ukuran ikon */
+    margin: 0 10px; /* Jarak antar ikon */
+    color: #000; /* Warna default ikon */
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Efek hover pada ikon */
+  .social:hover {
+    color: #007bff; /* Warna biru saat hover */
+    transform: scale(1.2); /* Efek zoom saat hover */
+  }
+  
+  /* Pusatkan ikon media sosial */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Jarak antar ikon */
+    margin-top: 10px;
+}
+
+#container {
+    display: flex;
+    background-color: #ffffff;
+}
+
+
+
+#deskripsi {
+    width: 20%; /* Atur lebar daftar wisata */
+    padding: 10px;
+   
+
+}
+
+
+
+.Destinasi img {
+   
+    width: 100%;
+    height: 250px; /* Sesuaikan tinggi sesuai kebutuhan */
+    object-fit: cover; /* Agar gambar tidak terlihat gepeng atau lonjong */
+}
+
+.Galeri img {
+    width: 100%;
+    height: 250px; /* Sesuaikan tinggi sesuai kebutuhan */
+    object-fit: cover; /* Agar gambar tidak terlihat gepeng atau lonjong */
+}
+
+#list-wisata {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.kontak {
+    background: url("gambar/bgkontak.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 5%;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    #deskripsi h3 {
+      font-size: 1rem;
+    }
+  
+    #deskripsi ol {
+      font-size: 0.5rem;
+    }
+  }
+  
+
