@@ -19,11 +19,23 @@
     left: 0;
     z-index: 9999; /* Memastikan navbar berada di atas elemen lain */
 }
-.navbar-toggler {
-    padding: 0.1rem 0.2rem; /* kecilkan ruang di dalam tombol */
-    font-size: 0.8rem;      /* kecilkan ikon hamburger */
-    line-height: 1;         /* biar gak terlalu tinggi */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 0.95rem;     /* Mengecilkan tulisan brand biar muat */
+    white-space: nowrap;    /* Biar tidak turun ke 2 baris */
   }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem; /* Mengecilkan tombol hamburger */
+    font-size: 0.8rem;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
 
 /* Beri padding agar konten tidak tertutup navbar */
 #Home,
