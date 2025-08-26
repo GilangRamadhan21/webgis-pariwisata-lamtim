@@ -2,241 +2,310 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skripsi Gilang</title>
+  <!-- Meta konfigurasi dasar -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skripsi Gilang</title>
 
-    <!-- LINK CSS BOOTSTRAP 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-          crossorigin="anonymous">
+  <!-- SCRIPT JavaScript Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-    <!-- LINK CSS LEAFLET -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-          crossorigin=""/>
+  <!-- LINK CSS Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-    <!-- SCRIPT JavaScript LEAFLET -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""></script>
+  <!-- SCRIPT Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 
-    <!-- SCRIPT JavaScript BOOTSTRAP 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-            crossorigin="anonymous"></script>
+  <!-- LINK CSS Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
 
-    <!-- SCRIP Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Leaflet Routing Machine (untuk rute navigasi) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
 
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="style.css">
-  
+  <!-- Font Awesome (ikon sosial media) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- LINK CSS lokal -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">PARIWISATA LAMPUNG TIMUR</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">PARIWISATA LAMPUNG TIMUR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Destinasi">Destinasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#MapPariwisata">Map Pariwisata</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Galeri">Galeri</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Kontak">Kontak</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Script untuk menutup navbar otomatis setelah klik menu -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var navLinks = document.querySelectorAll(".nav-item .nav-link");
-            var navbarCollapse = document.querySelector(".navbar-collapse");
-
-            navLinks.forEach(function (link) {
-                link.addEventListener("click", function () {
-                    var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                        toggle: false
-                    });
-                    bsCollapse.hide();
-                });
-            });
-        });
-    </script>
-
-    <!-- Home 1 -->
-    <div class="container-fluid banner ">
-        <div class="container text-center">
-            <h4 class="display-6" id="Home">SELAMAT DATANG DI</h4>
-            <h3 class="display-1">Destinasi Wisata Terbaik di Lampung Timur</h3>
-            <a href="#Destinasi">
-                <button type="button" class="btn btn-danger btn-lg">Jelajahi Sekarang</button>
-            </a>
-        </div>
-    </div>
-
-    <!-- Destinasi -->
-    <section class="container-fluid Destinasi pt-5 pb-5">
-        <div class="container text-center">
-            <h2 class="display-3" id="Destinasi">Destinasi Wisata Populer</h2>
-            <br>
-            <div class="row pt-4">
-                <div class="col-md-4 text-center">
-                    <img src="gambar/destinasi1.jpg" class="img-fluid rounded" alt="Way Kambas">
-                    <h3 class="mt-3">Taman Nasional Way Kambas</h3>
-                    <p>Tempat konservasi gajah dan ekosistem alami yang menakjubkan.</p>
-                </div>
-                <div class="col-md-4 text-center PantaiKerangMas">
-                    <img src="gambar/destinasi2.jpg" class="img-fluid rounded" alt="Pantai Kerang Mas">
-                    <h3 class="mt-3">Pantai Kerang Mas</h3>
-                    <p>Pasir putih yang indah dan panorama sunset yang memukau.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="gambar/destinasi3.jpg" class="img-fluid rounded" alt="Danau Way Jepara">
-                    <h3 class="mt-3">Danau Way Jepara</h3>
-                    <p>Destinasi sempurna untuk bersantai dan menikmati alam.</p>
-                </div>
-            </div>
-        </div><br>
-        <br><br>
-    </section>
-
-    <!-- Map Pariwisata -->
-    <section class="container-fluid MapPariwisata pt-5 pb-5 bg-dark" >
-        <div class="container text-center text-white">
-            <h2 class="display-3" id="MapPariwisata">Map Pariwisata</h2>
-        </div>
-    </section>
-
-    <!-- Div untuk menampilkan peta -->
-    <section id="container">
-        <div id="map"></div>
-        <div id="deskripsi">
-            <h3>Daftar Wisata</h3>
-            <ol id="list-wisata" type="1">
-                <li>Taman Nasional Way Kambas</li>
-                <li>Danau Way Jepara</li>
-                <li>Pantai Kerang Mas</li>
-                <li>Taman Purbakala</li>
-            </ol>
-        </div>
-    </section>
-
-
-    <!-- Memanggil file map.js -->
-    <script src="map.js"></script>
-
-    <!-- Galeri -->
-    <section class="container-fluid Galeri pt-5 pb-5">
-      <div class="container text-center">
-          <h2 class="display-3" id="Galeri">Galeri</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, praesentium!</p>
-      
-          <div class="row pt-4">
-              <!-- Galeri 1 -->
-              <div class="col-md-4 text-center">
-                  <img src="gambar/destinasi1.jpg" class="img-fluid rounded" alt="Lampung Timur">
-                  <h3 class="mt-3">Taman Nasional Way Kambas</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, explicabo!</p>
-              </div>
-
-              <!-- Galeri 2 -->
-              <div class="col-md-4 text-center">
-                  <img src="gambar/destinasi2.jpg" class="img-fluid rounded" alt="Lampung Selatan">
-                  <h3 class="mt-3">Pantai kerang Mas</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, placeat?</p>
-              </div>
-
-              <!-- Galeri 3 -->
-              <div class="col-md-4 text-center">
-                  <img src="gambar/destinasi3.jpg" class="img-fluid rounded" alt="Lampung Barat">
-                  <h3 class="mt-3">Danau Way Jepara</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, harum!</p>
-              </div>
-
-              <!-- Galeri 4 -->
-              <div class="col-md-4 text-center">
-                  <img src="gambar/tamanpurbakala1.jpg" class="img-fluid rounded" alt="Lampung Tengah">
-                  <h3 class="mt-3">Taman Purbakala</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, tempore.</p>
-              </div>
-
-              <!-- Galeri 5 -->
-              <div class="col-md-4 text-center">
-                  <img src="gambar/pantaicemaraindah.jpg" class="img-fluid rounded" alt="Lampung Utara">
-                  <h3 class="mt-3">Pantai Cemara Indah</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quas.</p>
-              </div>
-
-              <!-- Galeri 6 -->
-              <div class="col-md-4 text-center">
-                  <img src="gambar/pantaimutiarabaru.jpg" class="img-fluid rounded" alt="Lampung Way Kanan">
-                  <h3 class="mt-3">Pantai Mutiara Baru</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nobis!</p>
-              </div>
-
-          </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navigasi menu -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Eksplorasi">Eksplorasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#WisataPopuler">Wisata Populer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#PetaWisata">Peta Wisata</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Kontak">Kontak</a></li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <!-- Kontak -->
-     <section class="kontak">
-        <div class="container pt-5 pb-5">
-            <div class="row align-items-start">
-            <!-- Informasi Profil -->
-                <div class="col-md-6 text-center mt-5 mt-md-0">
-                    <h2 class="display-5" id="Kontak">Kontak</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, praesentium!</p>
-            
-                    <img src="gambar/profil.jpg" alt="Profil" class="profile-img mb-3" style="width: 200px; border-radius: 50%;">
-                    <h4>Gilang Ramadhan</h4>
-                    <p>Mahasiswa Teknik Geodesi</p>
-            
-                    <!-- Media Sosial -->
-                    <p class="sosial">
-                    <a href="https://www.tiktok.com/@______gil" class="social me-2"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.facebook.com/Gilang.Ramadhan.255661" class="social me-2"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/xcv.gill" class="social"><i class="fab fa-instagram"></i></a>
-                    </p>
-                </div>
-        
-                 <!-- Formulir Kontak -->
-                <div class="col-md-6">
-                    <form action="https://formsubmit.co/diablodanmika@gmail.com" method="POST">
-                    <div class="mb-3">
-                        <label for="nama" class="form-label">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
-                    </div>
+  <!-- Menutup navbar otomatis setelah klik menu di mobile -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var navLinks = document.querySelectorAll(".nav-item .nav-link");
+      var navbarCollapse = document.querySelector(".navbar-collapse");
 
-                    <div class="mb-3">
-                        <label for="alamat" class="form-label">Alamat</label>
-                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan alamat Anda" required>
-                    </div>
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          var bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+          bsCollapse.hide();
+        });
+      });
+    });
+  </script>
 
-                    <div class="mb-3">
-                        <label for="pesan" class="form-label">Pesan</label>
-                        <textarea class="form-control" id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Kirim</button>
-                    </form>
-                </div>
-            </div>
+  <!-- ======== HOME SECTION ======== -->
+  <section class="container-fluid Home">
+    <div class="container text-center">
+      <h4 class="display-6" id="Home">SELAMAT DATANG DI</h4>
+      <h1 class="display-3 fw-bold">WEBGIS Destinasi Wisata<br>Kabupaten Lampung Timur</h1>
+      <p class="lead mt-3">Jelajahi keindahan alam dan budaya Lampung Timur melalui peta interaktif</p>
+      <a href="#Eksplorasi">
+        <button type="button" class="btn btn-danger btn-lg">Jelajahi Sekarang</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======== EKSPLORASI SECTION ======== -->
+  <section class="container-fluid Eksplorasi pt-5 pb-5">
+    <div class="container text-center">
+      <h2 class="text-center mb-4 fw-bold display-6" id="Eksplorasi">Eksplorasi Wisata Lampung Timur</h2>
+      <p class="text-center mb-5">
+        Kabupaten Lampung Timur memiliki potensi wisata yang sangat beragam, mulai dari keindahan alam, kekayaan budaya, hingga kawasan konservasi.
+        Melalui sistem WebGIS ini, pengunjung dapat menjelajahi berbagai destinasi secara interaktif dan informatif.
+      </p>
+
+      <!-- Kategori wisata -->
+      <div class="row text-center">
+        <!-- Alam -->
+        <div class="col-md-4">
+          <i class="fas fa-tree fa-3x mb-3 text-success"></i>
+          <h5 class="fw-bold">Wisata Alam</h5>
+          <p>Pantai, taman nasional, dan danau alami.</p>
         </div>
-    </section>
 
-    <footer class="container-fluid bg-dark text-white text-center py-4">
-        <p>&copy; 2025 Pariwisata Lampung Timur | Dibuat dengan ❤️ oleh Gilang Ramadhan</p>
-    </footer>
+        <!-- Budaya -->
+        <div class="col-md-4">
+          <i class="fas fa-landmark fa-3x mb-3 text-warning"></i>
+          <h5 class="fw-bold">Wisata Budaya</h5>
+          <p>Tradisi, adat, dan kesenian lokal khas Lampung Timur.</p>
+        </div>
+
+        <!-- Keluarga -->
+        <div class="col-md-4">
+          <i class="fas fa-children fa-3x mb-3 text-primary"></i>
+          <h5 class="fw-bold">Wisata Keluarga</h5>
+          <p>Taman bermain dan tempat rekreasi edukatif.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== WISATA POPULER SECTION ======== -->
+  <section class="container-fluid py-5 bg-light">
+    <div class="container" id="WisataPopuler">
+      <h2 class="text-center fw-bold mb-5 display-6">Wisata Terpopuler di Lampung Timur</h2>
+      <p class="text-center text-muted mb-5 px-4">
+        Berikut adalah destinasi wisata paling populer dan sering dikunjungi di Kabupaten Lampung Timur. Temukan tempat terbaik untuk dikunjungi bersama keluarga dan sahabat.
+      </p>
+
+      <!-- Galeri 3 destinasi -->
+      <div class="row g-4 justify-content-center">
+        <!-- Item 1 -->
+        <div class="col-md-4">
+          <div class="card shadow border-0 galeri-card h-100">
+            <img src="gambar/waykambas.jpg" class="card-img-top galeri-img" data-bs-toggle="modal" data-bs-target="#modal1">
+            <div class="card-body text-center">
+              <h5 class="fw-semibold">Taman Nasional Way Kambas</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-md-4">
+          <div class="card shadow border-0 galeri-card h-100">
+            <img src="gambar/wayjepara.jpg" class="card-img-top galeri-img" data-bs-toggle="modal" data-bs-target="#modal2">
+            <div class="card-body text-center">
+              <h5 class="fw-semibold">Danau Way Jepara</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-md-4">
+          <div class="card shadow border-0 galeri-card h-100">
+            <img src="gambar/pantaikerangmas.jpg" class="card-img-top galeri-img" data-bs-toggle="modal" data-bs-target="#modal3">
+            <div class="card-body text-center">
+              <h5 class="fw-semibold">Pantai Kerang Mas</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MODAL TAMBAHAN GAMBAR DESTINASI ======== -->
+  <!-- Modal 1 - Way Kambas -->
+  <div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border-0">
+        <img src="gambar/waykambas.jpg" class="img-fluid rounded" alt="Way Kambas">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 - Danau Jepara -->
+  <div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border-0">
+        <img src="gambar/wayjepara.jpg" class="img-fluid rounded" alt="Danau Way Jepara">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 - Kerang Mas -->
+  <div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border-0">
+        <img src="gambar/pantaikerangmas.jpg" class="img-fluid rounded" alt="Pantai Kerang Mas">
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== PETA WISATA SECTION ======== -->
+  <section class="container-fluid py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 display-6" id="PetaWisata">Peta Interaktif Destinasi Wisata</h2>
+      <p class="text-center mb-4">
+       Gunakan peta berikut untuk melihat lokasi wisata yang tersebar di Kabupaten Lampung Timur. Klik ikon pada peta atau pilih dari daftar di samping.
+      </p>
+
+      <div class="row">
+        <!-- Kolom peta -->
+        <div class="col-lg-8">
+          <div class="map-wrapper shadow rounded">
+            <div id="map"></div>
+          </div>
+        </div>
+
+        <!-- Kolom daftar destinasi (sidebar) -->
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Daftar Wisata</h5>
+
+              <!-- Wisata Alam (Alami & Buatan) -->
+              <h6 class="fw-bold mt-3">Wisata Alam (Alami & Buatan)</h6>
+              <ul class="list-group">
+                <li class="list-group-item wisata-item" data-id="1">Taman Nasional Way Kambas</li>
+                <li class="list-group-item wisata-item" data-id="2">Wisata Padang Savana</li>
+                <li class="list-group-item wisata-item" data-id="3">Goa Pandan</li>
+                <li class="list-group-item wisata-item" data-id="4">Kali Medek</li>
+                <li class="list-group-item wisata-item" data-id="5">Kali Aro</li>
+                <li class="list-group-item wisata-item" data-id="6">Danau Way Jepara</li>
+                <li class="list-group-item wisata-item" data-id="7">Danau Kemuning</li>
+                <li class="list-group-item wisata-item" data-id="8">Danau Beringin Indah</li>
+                <li class="list-group-item wisata-item" data-id="9">Bendungan Way Curup</li>
+                <li class="list-group-item wisata-item" data-id="10">Bendungan Garongan</li>
+                <li class="list-group-item wisata-item" data-id="11">wisata wanaba</li>
+              </ul>
+
+              <!-- Wisata Pesisir -->
+              <h6 class="fw-bold mt-3">Wisata Pesisir</h6>
+              <ul class="list-group">
+                <li class="list-group-item wisata-item" data-id="12">Pantai Kerang Mas</li>
+                <li class="list-group-item wisata-item" data-id="13">Pantai Cemara Indah</li>
+                <li class="list-group-item wisata-item" data-id="14">Pantai Mutiara Baru</li>
+              </ul>
+
+              <!-- Wisata Keluarga & Edukasi -->
+              <h6 class="fw-bold mt-3">Wisata Keluarga & Edukasi</h6>
+              <ul class="list-group">
+                <li class="list-group-item wisata-item" data-id="15">Way Guruh Sriwangi</li>
+                <li class="list-group-item wisata-item" data-id="16">Rest Area Labuhan Ratu 6</li>
+              </ul>
+
+              <!-- Wisata Budaya & Sejarah -->
+              <h6 class="fw-bold mt-3">Wisata Budaya & Sejarah</h6>
+              <ul class="list-group">
+                <li class="list-group-item wisata-item" data-id="17">Taman Purbakala Pugung Raharjo</li>
+                <li class="list-group-item wisata-item" data-id="18">Sumber Mata Air Awet Muda</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script untuk memanggil file JavaScript pemetaan -->
+  <script src="map.js"></script>
+
+  <!-- ======== KONTAK SECTION ======== -->
+  <section class="kontak">
+    <div class="container pt-5 pb-5">
+      <div class="row align-items-start">
+        <!-- Kolom Informasi Kontak -->
+        <div class="col-md-6 text-center mt-5 mt-md-0">
+          <h2 class="fw-bold display-5" id="Kontak">Kontak</h2>
+          <p>Hubungi kami untuk informasi lebih lanjut tentang destinasi wisata di Lampung Timur.</p>
+
+          <img src="gambar/profil.jpg" alt="Profil" class="profile-img mb-3">
+          <h4>Gilang Ramadhan</h4>
+          <p>Mahasiswa Teknik Geodesi</p>
+
+          <!-- Sosial Media -->
+          <p class="sosial">
+            <a href="https://tiktok.com/@______gil" class="social me-2"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/Gilang.Ramadhan.255661" class="social me-2"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/xcv.gill" class="social"><i class="fab fa-instagram"></i></a>
+          </p>
+        </div>
+
+        <!-- Kolom Formulir Kontak -->
+        <div class="col-md-6">
+          <form action="https://formsubmit.co/diablodanmika@gmail.com" method="POST">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="alamat" class="form-label">Alamat</label>
+              <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan alamat Anda" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="container-fluid bg-dark text-white text-center py-4">
+    <p>&copy; 2025 Pariwisata Lampung Timur | Dibuat oleh Gilang Ramadhan</p>
+  </footer>
+
 </body>
 </html>
