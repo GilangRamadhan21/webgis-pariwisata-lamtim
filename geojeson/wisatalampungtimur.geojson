@@ -1,0 +1,563 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.703087,
+          -5.078999
+        ]
+      },
+      "properties": {
+        "ID": 1.0,
+        "Nama": "Taman Nasional Way Kambas",
+        "Deskripsi": "Taman Nasional Way Kambas adalah surga konservasi di ujung timur Lampung, terkenal sebagai habitat alami gajah Sumatera dan rumah bagi satwa langka lainnya. Di sini, pengunjung bisa menyaksikan langsung pelatihan gajah, menjelajahi alam liar, dan merasakan nuansa petualangan yang tak terlupakan.",
+        "Fasilitas": "Pusat informasi, Masjid, area parkir, toilet, area piknik, sewa savari car dan pusat pelatihan gajah.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Kecamatan Labuhan Ratu, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Rp 20.000 Hari biasa, Rp. 30.000 Hari libur",
+        "Rating": 4.6,
+        "Ulasan": "120 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Taman+Nasional+Way+Kambas/@-5.611588,104.3587088,8z/data=!4m10!1m2!2m1!1sTaman+Nasional!3m6!1s0x2e40813cf143bc13:0x4c426b2efc4681a3!8m2!3d-4.9275758!4d105.7769283!15sCg5UYW1hbiBOYXNpb25hbFoQIg50YW1hbiBuYXNpb25hbJIBDW5hdGlvbmFsX3BhcmuaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTlVjR1EyYVZoQkVBRaoBShABKhIiDnRhbWFuIG5hc2lvbmFsKCYyHhABIhp89f9l3JKwvDHIZ3qzMEcR6XpFqxUrpX0vPzISEAIiDnRhbWFuIG5hc2lvbmFs4AEA-gEECAAQOw!16zL20vMDlkdnJz?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/waykambas.jpg",
+        "Foto2": "gambar/waykambas2.jpg",
+        "Foto3": "gambar/waykambas3.jpg",
+        "Foto4": "gambar/waykambas4.jpg",
+        "Foto5": "gambar/waykambas5.jpg",
+        "Foto6": "gambar/waykambas6.jpg",
+        "Foto7": "gambar/waykambas7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.703087 -5.078999)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.791484115608,
+          -5.18280596545057
+        ]
+      },
+      "properties": {
+        "ID": 2.0,
+        "Nama": "Wisata Padang Savana",
+        "Deskripsi": "Padang Savana Lampung Timur merupakan destinasi wisata alam yang menyuguhkan hamparan padang rumput luas menyerupai savana di Afrika. Berhadapan langsung dengan Taman Nasional Way Kambas, kawasan ini menghadirkan perpaduan unik antara keindahan alam terbuka dan kekayaan ekosistem hutan lindung. Dengan latar langit luas, rerumputan yang melambai, dan udara yang sejuk, tempat ini cocok untuk bersantai, berfoto, atau sekadar menikmati suasana alami yang menenangkan. Waktu terbaik untuk berkunjung adalah pagi atau sore hari saat cahaya matahari menyinari savana dengan indah.",
+        "Fasilitas": "Gazebo.",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "Desa Braja Harjosari, Kec. Braja Slebah, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 4.3,
+        "Ulasan": "72 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Wisata+Padang+Savana/@-5.1814683,105.7885461,17z/data=!3m1!4b1!4m6!3m5!1s0x2e4060052b30c575:0x271c48974122f5e1!8m2!3d-5.1814736!4d105.791121!16s%2Fg%2F11gclzdph0?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/savana.jpg",
+        "Foto2": "gambar/savana2.jpg",
+        "Foto3": "gambar/savana3.jpg",
+        "Foto4": "gambar/savana4.jpg",
+        "Foto5": "gambar/savana5.jpg",
+        "Foto6": "gambar/savana6.jpg",
+        "Foto7": "gambar/savana7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.791484115608 -5.18280596545057)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.669672922523,
+          -5.39088098906309
+        ]
+      },
+      "properties": {
+        "ID": 3.0,
+        "Nama": "Goa Pandan",
+        "Deskripsi": "Goa Pandan merupakan destinasi wisata alam di Lampung Timur yang menyuguhkan keindahan goa alami dengan stalaktit dan stalagmit yang memukau. Terletak di tengah kawasan yang masih asri, goa ini menawarkan suasana sejuk dan tenang, cocok bagi pecinta alam dan petualang yang ingin menjelajahi keindahan bawah tanah yang tersembunyi.",
+        "Fasilitas": "Area parkir, gazebo, toilet dan sewa Pemnadu susur goa.",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "Desa Giri Mulyo, Kec. Marga Sekapung, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 4.3,
+        "Ulasan": "68 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/GOA+PANDAN+GIRI+MULYO/@-5.3910733,105.6671624,17z/data=!3m1!4b1!4m6!3m5!1s0x2e40fa36a5b1d2b7:0xd9a1392387c317de!8m2!3d-5.3910786!4d105.6697373!16s%2Fg%2F11fz9z0kq2?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/goa.jpg",
+        "Foto2": "gambar/goa2.jpg",
+        "Foto3": "gambar/goa3.jpg",
+        "Foto4": "gambar/goa4.jpg",
+        "Foto5": "gambar/goa5.jpg",
+        "Foto6": "gambar/goa6.jpg",
+        "Foto7": "gambar/goa7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.669672922523 -5.39088098906309)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.731946,
+          -5.298318
+        ]
+      },
+      "properties": {
+        "ID": 4.0,
+        "Nama": "Kali Medek",
+        "Deskripsi": "Kali Medek adalah aliran sungai jernih dengan suasana alami yang masih asri, dikelilingi pepohonan dan batuan sungai yang eksotis. Tempat ini menjadi pilihan tepat untuk bermain air, berendam, atau sekadar bersantai menikmati kesejukan alam pedesaan.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, sewa perahu dan sewa ban.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Desa Sri Menanti, Kec. Bandar Sribawono, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Rp. 10.000 per orang",
+        "Rating": 4.3,
+        "Ulasan": "350 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/WISATA+TERAPI+IKAN+DAN+PEMANDIAN+KALI+ALAM/@-5.2995757,105.7288099,17z/data=!4m10!1m2!2m1!1skali+medek!3m6!1s0x2e40f7dc820646a9:0xc8ecaa1b02ff9956!8m2!3d-5.298663!4d105.7317191!15sCgprYWxpIG1lZGVrkgESdG91cmlzdF9hdHRyYWN0aW9uqgEzEAEyHxABIhuGW5Y3PJL5N4GdDeS-PHCb5-XPUjd2qSp9z_wyDhACIgprYWxpIG1lZGVr4AEA!16s%2Fg%2F11llr61by4?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/kalimedek.jpg",
+        "Foto2": "gambar/kalimedek2.jpg",
+        "Foto3": "gambar/kalimedek3.jpg",
+        "Foto4": "gambar/kalimedek4.jpg",
+        "Foto5": "gambar/kalimedek5.jpg",
+        "Foto6": "gambar/kalimedek6.jpg",
+        "Foto7": "gambar/kalimedek7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.731946 -5.298318)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7368401436122,
+          -5.296666919561662
+        ]
+      },
+      "properties": {
+        "ID": 5.0,
+        "Nama": "Kali Aro",
+        "Deskripsi": "Kali Aro adalah aliran sungai alami yang jernih dan menyegarkan, dikelilingi oleh pemandangan hijau yang asri. Tempat ini sering dijadikan lokasi wisata keluarga dan bermain air karena arusnya yang tenang dan suasananya yang damai. Cocok untuk relaksasi di akhir pekan bersama orang terdekat.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, terapi ikan, perosotan, sewa perahu dan sewa ban.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Desa Sri Menanti, Kec. Bandar Sribawono, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Rp. 10.000 per orang",
+        "Rating": 4.0,
+        "Ulasan": "422 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Wisata+Alam+Kaliaro/@-5.2969185,105.7320459,17z/data=!4m10!1m2!2m1!1skali+aro!3m6!1s0x2e40f65f0d304feb:0x136b6d3ab0871118!8m2!3d-5.2969185!4d105.7368095!15sCghrYWxpIGFyb5IBEnRvdXJpc3RfYXR0cmFjdGlvbqoBLxABMh0QASIZGbGhdmUqDfHeWwLdbxrm6ow9Fl5uUt_aEDIMEAIiCGthbGkgYXJv4AEA!16s%2Fg%2F11fxvr2dcg?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/kaliaro.jpg",
+        "Foto2": "gambar/kaliaro2.jpg",
+        "Foto3": "gambar/kaliaro3.jpg",
+        "Foto4": "gambar/kaliaro4.jpg",
+        "Foto5": "gambar/kaliaro5.jpg",
+        "Foto6": "gambar/kaliaro6.jpg",
+        "Foto7": "gambar/kaliaro7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.7368401436122 -5.296666919561662)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.669847,
+          -5.202512
+        ]
+      },
+      "properties": {
+        "ID": 6.0,
+        "Nama": "Danau Way Jepara",
+        "Deskripsi": "Danau Way Jepara adalah danau alami yang menyuguhkan panorama tenang dan udara segar di tengah alam Lampung Timur. Cocok untuk bersantai, memancing, atau berfoto dengan latar pemandangan yang asri, danau ini menjadi pilihan favorit untuk melepas penat dari kesibukan sehari-hari.",
+        "Fasilitas": "Area parkir, dan spot foto.",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "Desa Braja Harjosari, Kec. Way Jepara, Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 4.3,
+        "Ulasan": "110 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Danau+Way+Jepara/@-5.2276481,105.667955,17z/data=!4m15!1m8!3m7!1s0x2e40f348d7e8d5eb:0xab6c5c6ffaab77cb!2sDanau+Way+Jepara!8m2!3d-5.2029426!4d105.6640737!10e5!16s%2Fg%2F11c616j0wr!3m5!1s0x2e40f348d7e8d5eb:0xab6c5c6ffaab77cb!8m2!3d-5.2029426!4d105.6640737!16s%2Fg%2F11c616j0wr?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/wayjepara.jpg",
+        "Foto2": "gambar/wayjepara2.jpg",
+        "Foto3": "gambar/wayjepara3.jpg",
+        "Foto4": "gambar/wayjepara4.jpg",
+        "Foto5": "gambar/wayjepara5.jpg",
+        "Foto6": "gambar/wayjepara6.jpg",
+        "Foto7": "gambar/wayjepara7.jpg",
+        "Akses_Jalan": "<1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.669847 -5.202512)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7342812264062,
+          -5.304265397650701
+        ]
+      },
+      "properties": {
+        "ID": 7.0,
+        "Nama": "Danau Kemuning",
+        "Deskripsi": "Danau Kemuning menawarkan keindahan alam yang tenang dengan air yang jernih dan pepohonan rindang di sekitarnya. Tempat ini cocok untuk rekreasi keluarga, berperahu, atau sekadar menikmati suasana alam yang damai dan menyegarkan.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, dan sewa perahu bebek.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Desa Braja Harjosari, Kecamatan Way Jepara, Lampung Timur.",
+        "Tiket_Masuk": "Rp. 5000 per orang",
+        "Rating": 4.2,
+        "Ulasan": "471 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Danau+Kemuning/@-5.3050357,105.7316551,17z/data=!3m1!4b1!4m6!3m5!1s0x2e40f657d4a0d37b:0x8b587bf01d7b185b!8m2!3d-5.305041!4d105.73423!16s%2Fg%2F11b6v61xgb?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/danaukemuning.jpg",
+        "Foto2": "gambar/danaukemuning2.jpg",
+        "Foto3": "gambar/danaukemuning3.jpg",
+        "Foto4": "gambar/danaukemuning4.jpg",
+        "Foto5": "gambar/danaukemuning5.jpg",
+        "Foto6": "gambar/danaukemuning6.jpg",
+        "Foto7": "gambar/danaukemuning7.jpg",
+        "Akses_Jalan": "<1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.7342812264062 -5.304265397650701)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.513814,
+          -5.065618
+        ]
+      },
+      "properties": {
+        "ID": 8.0,
+        "Nama": "Danau Beringin Indah",
+        "Deskripsi": "Danau Beringin Indah memikat dengan pesona airnya yang tenang dan dikelilingi oleh pepohonan hijau yang rimbun. Suasana sejuk dan alami menjadikannya tempat favorit untuk bersantai, berfoto, atau menikmati waktu bersama keluarga di tengah keindahan alam.",
+        "Fasilitas": "Gazebo.",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "Desa Negara Nabung, Kec. Sukadana, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 4.2,
+        "Ulasan": "22Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Taman+Wisata+Beringin+Indah/@-5.0687586,105.2104855,11z/data=!4m10!1m2!2m1!1sdanau+beringin+indah!3m6!1s0x2e4090db1f6f6505:0xe0c026ebca280dde!8m2!3d-5.0687706!4d105.5153758!15sChRkYW5hdSBiZXJpbmdpbiBpbmRhaJIBEnRvdXJpc3RfYXR0cmFjdGlvbqoBVxABKhgiFGRhbmF1IGJlcmluZ2luIGluZGFoKCYyHxABIhuokwMbii4T5GlcXMUP6cCu-SjDWao84gIzTnUyGBACIhRkYW5hdSBiZXJpbmdpbiBpbmRhaOABAA!16s%2Fg%2F11clwy774r?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/beringinindah.jpg",
+        "Foto2": "gambar/beringinindah2.jpg",
+        "Foto3": "gambar/beringinindah3.jpg",
+        "Foto4": "gambar/beringinindah4.jpg",
+        "Foto5": "gambar/beringinindah5.jpg",
+        "Foto6": "gambar/beringinindah6.jpg",
+        "Foto7": "gambar/beringinindah7.jpg",
+        "Akses_Jalan": "<1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.513814 -5.065618)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.74159,
+          -5.280661
+        ]
+      },
+      "properties": {
+        "ID": 9.0,
+        "Nama": "Bendungan Way Curup",
+        "Deskripsi": "Bendungan Way Curup menawarkan keindahan sungai alami dengan air yang jernih, bebatuan besar, dan suasana pedesaan yang tenang. Meskipun belum dikelola sepenuhnya, tempat ini memiliki potensi besar sebagai destinasi wisata alam yang menyegarkan. Cocok untuk pengunjung yang ingin menikmati relaksasi sederhana di tengah alam terbuka.",
+        "Fasilitas": "Spot foto.",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "Desa Rajabasa Baru, Kec. Mataram Baru, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 3.5,
+        "Ulasan": "11 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Taman+Wisata+Way+Curup/@-5.2823362,105.7381863,16.25z/data=!4m10!1m2!2m1!1scurup+lamtim!3m6!1s0x2e40f67b835a5469:0x8cd48b63e0980fba!8m2!3d-5.2808041!4d105.7416624!15sCgxjdXJ1cCBsYW10aW2SAQRwYXJrqgFAEAEqCSIFY3VydXAoJjIfEAEiG6j-fOhW6a4mKgrM3pXh6XqeoG8geOWKAJIaEzIQEAIiDGN1cnVwIGxhbXRpbeABAA!16s%2Fg%2F11gcqx4sv3?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/curup.jpg",
+        "Foto2": "gambar/curup2.jpg",
+        "Foto3": "gambar/curup3.jpg",
+        "Foto4": "gambar/curup4.jpg",
+        "Foto5": "gambar/curup5.jpg",
+        "Foto6": "gambar/curup6.jpg",
+        "Foto7": "gambar/curup7.jpg",
+        "Akses_Jalan": "<1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.74159 -5.280661)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.408680284657,
+          -5.0681317405647
+        ]
+      },
+      "properties": {
+        "ID": 10.0,
+        "Nama": "Bendungan Garongan",
+        "Deskripsi": "Bendungan Garongan di Lampung Timur merupakan destinasi wisata yang menawarkan panorama alam yang tenang dengan hamparan air yang luas dan dikelilingi pepohonan hijau. Selain berfungsi sebagai sarana irigasi, bendungan ini menjadi tempat favorit untuk bersantai, memancing, dan menikmati udara segar, menjadikannya pilihan tepat untuk wisata keluarga yang terjangkau dan menenangkan.",
+        "Fasilitas": "-",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "Desa Gondang Rejo, Kec. Pekalongan, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 5.0,
+        "Ulasan": "3 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Bendungan+Garongan/@-5.0686741,105.4087232,17z/data=!4m15!1m8!3m7!1s0x2e409720954e0d0b:0xf90e91cb7490fe40!2sBendungan+Garongan!8m2!3d-5.0682466!4d105.4087195!10e5!16s%2Fg%2F11kqqm1t10!3m5!1s0x2e409720954e0d0b:0xf90e91cb7490fe40!8m2!3d-5.0682466!4d105.4087195!16s%2Fg%2F11kqqm1t10?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/garongan.jpg",
+        "Foto2": "gambar/garongan2.jpg",
+        "Foto3": "gambar/garongan3.jpg",
+        "Foto4": "gambar/garongan4.jpg",
+        "Foto5": "gambar/garongan5.jpg",
+        "Foto6": "gambar/garongan6.jpg",
+        "Foto7": "gambar/garongan7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.408680284657 -5.0681317405647)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.625874179727,
+          -5.06877557362542
+        ]
+      },
+      "properties": {
+        "ID": 11.0,
+        "Nama": "Wisata Wanaba",
+        "Deskripsi": "Nikmati ketenangan alam di Wisata Wanaba, surga tersembunyi di Sukadana Timur, Lampung Timur. Hamparan air danau yang luas berpadu dengan panorama hijau pedesaan menciptakan suasana damai nan sejuk. Cocok untuk bersantai di gazebo pinggir waduk, bermain wahana air, hingga menikmati petualangan seru bersama keluarga. Dengan harga tiket super terjangkau, Wanaba menawarkan keindahan alam yang tak kalah memukau dari wisata populer lainnya.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, dan sewa perahu bebek.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Desa Sukadana Tim., Kec. Sukadana, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Rp 10.000 per orang",
+        "Rating": 4.4,
+        "Ulasan": "23 Ulasan",
+        "Link_Google": "https://www.google.com/maps/search/wisata+wanaba/@-5.0744799,105.6137737,16z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/wanaba.jpg",
+        "Foto2": "gambar/wanaba2.jpg",
+        "Foto3": "gambar/wanaba3.jpg",
+        "Foto4": "gambar/wanaba4.jpg",
+        "Foto5": "gambar/wanaba5.jpg",
+        "Foto6": "gambar/wanaba6.jpg",
+        "Foto7": "gambar/wanaba7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.625874179727 -5.06877557362542)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.819148271713,
+          -5.37141851987791
+        ]
+      },
+      "properties": {
+        "ID": 12.0,
+        "Nama": "Pantai Kerang Mas",
+        "Deskripsi": "Pantai Kerang Mas merupakan destinasi wisata andalan di Lampung Timur yang menawarkan pesona pasir putih, deretan kerang alami, dan pemandangan laut lepas yang memukau. Berhadapan langsung dengan Samudra Hindia, pantai ini menjadi tempat favorit untuk menikmati matahari terbit, bersantai di gazebo, mencicipi hidangan laut segar di warung sekitar, hingga berburu foto di spot-spot instagramable yang tersedia.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, aula, sewa ban, sewa perahu, sewa ATV, sewa banana boot dan penginapan.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Desa Muara Gading Mas, Kec. Labuhan Maringgai, Lampung Timur",
+        "Tiket_Masuk": "Rp 10.000 per orang",
+        "Rating": 4.1,
+        "Ulasan": "1487 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Pantai+Kerang+Mas/@-5.3714411,105.8088288,15z/data=!3m1!4b1!4m6!3m5!1s0x2e4057a51014a77d:0x24046643c55e5072!8m2!3d-5.3714626!4d105.8191286!16s%2Fg%2F11cn2x18_1?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/pantaikerangmas.jpg",
+        "Foto2": "gambar/pantaikerangmas2.jpg",
+        "Foto3": "gambar/pantaikerangmas3.jpg",
+        "Foto4": "gambar/pantaikerangmas4.jpg",
+        "Foto5": "gambar/pantaikerangmas5.jpg",
+        "Foto6": "gambar/pantaikerangmas6.jpg",
+        "Foto7": "gambar/pantaikerangmas7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.819148271713 -5.37141851987791)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.821267992564,
+          -5.41876403361251
+        ]
+      },
+      "properties": {
+        "ID": 13.0,
+        "Nama": "Pantai Cemara Indah",
+        "Deskripsi": "Pantai Cemara Indah adalah surga tersembunyi di pesisir Lampung Timur yang memikat hati dengan hamparan pohon cemara yang rindang, berpadu harmonis dengan debur ombak dan pasir pantai yang lembut. Suasananya yang tenang dan alami menjadikannya tempat ideal untuk bersantai, piknik keluarga, hingga berkemah. Dikelilingi pemandangan laut biru dan angin sepoi-sepoi yang menyejukkan, Pantai Cemara Indah menghadirkan pengalaman wisata yang damai dan menenangkan, jauh dari hiruk-pikuk kota.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, dan sewa ban.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Desa Bandar Negeri, Kec. Labuhan Maringgai, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Rp 10.000 per orang",
+        "Rating": 4.4,
+        "Ulasan": "375 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Pantai+Cemara+Indah/@-5.4203581,105.7836102,14z/data=!4m10!1m2!2m1!1sPantai++cemara+indah!3m6!1s0x2e4057da8186b1e3:0x56610743c7969c5a!8m2!3d-5.4203581!4d105.821719!15sChRQYW50YWkgIGNlbWFyYSBpbmRhaJIBEnRvdXJpc3RfYXR0cmFjdGlvbqoBOxABMh4QASIaCwz6-wiYpkSK6qKNB-ED__sR0w_PRVWM_4UyFxACIhNwYW50YWkgY2VtYXJhIGluZGFo4AEA!16s%2Fg%2F11qqmv7jlz?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/pantaicemaraindah.jpg",
+        "Foto2": "gambar/pantaicemaraindah2.jpg",
+        "Foto3": "gambar/pantaicemaraindah3.jpg",
+        "Foto4": "gambar/pantaicemaraindah4.jpg",
+        "Foto5": "gambar/pantaicemaraindah5.jpg",
+        "Foto6": "gambar/pantaicemaraindah6.jpg",
+        "Foto7": "gambar/pantaicemaraindah7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.821267992564 -5.41876403361251)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.822297960772,
+          -5.42970116568115
+        ]
+      },
+      "properties": {
+        "ID": 14.0,
+        "Nama": "Pantai Mutiara Baru",
+        "Deskripsi": "Pantai Mutiara Baru menyuguhkan pesona eksotis dengan hamparan pasir putih yang bersih dan air laut yang jernih kebiruan, menjadikannya destinasi ideal untuk bersantai atau berfoto ria. Dikelilingi pepohonan rindang dan suasana yang masih alami, pantai ini menawarkan ketenangan yang sulit ditemukan di tempat lain. Pemandangan matahari terbit di sini sangat memukau, membuat setiap kunjungan terasa begitu istimewa dan berkesan.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, dan sewa ban.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Desa Karya Makmur, Kec. Labuhan Maringgai, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Rp 10.000 per orang",
+        "Rating": 4.2,
+        "Ulasan": "431 Ulasan",
+        "Link_Google": "https://www.google.com/maps/search/Pantai++mutiara+baru/@-5.420272,105.7836102,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/pantaimutiarabaru.jpg",
+        "Foto2": "gambar/pantaimutiarabaru2.jpg",
+        "Foto3": "gambar/pantaimutiarabaru3.jpg",
+        "Foto4": "gambar/pantaimutiarabaru4.jpg",
+        "Foto5": "gambar/pantaimutiarabaru5.jpg",
+        "Foto6": "gambar/pantaimutiarabaru6.jpg",
+        "Foto7": "gambar/pantaimutiarabaru7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.822297960772 -5.42970116568115)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.727228223924,
+          -5.23050069920506
+        ]
+      },
+      "properties": {
+        "ID": 15.0,
+        "Nama": "Way Guruh Sriwangi",
+        "Deskripsi": "Way Guruh Sriwangi adalah destinasi pemandian alami yang menawarkan pengalaman menyegarkan di tengah suasana pedesaan yang tenang. Airnya yang jernih berasal langsung dari sumber mata air, menjadikannya tempat favorit untuk bersantai bersama keluarga. Keasrian lingkungan sekitar dipadukan dengan aliran sungai yang menyejukkan membuat Way Guruh Sriwangi cocok untuk melepas penat dan menikmati keindahan alam Lampung Timur.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, terapi ikan, dan flying fox.",
+        "Jam_Buka": "Setiap hari, pukul 08.00 - 17.00 WIB",
+        "Alamat": "Desa Sri Wangi, Kec. Way Jepara, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Rp 20.000 per orang",
+        "Rating": 4.0,
+        "Ulasan": "41 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Way+Guruh+Sriwangi/@-5.2308373,105.7246512,17z/data=!3m1!4b1!4m6!3m5!1s0x2e40f5003fc998a9:0x4e7bea099e80b9a!8m2!3d-5.2308426!4d105.7272261!16s%2Fg%2F11m6hx33mm?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/wayguruh.jpg",
+        "Foto2": "gambar/wayguruh2.jpg",
+        "Foto3": "gambar/wayguruh3.jpg",
+        "Foto4": "gambar/wayguruh4.jpg",
+        "Foto5": "gambar/wayguruh5.jpg",
+        "Foto6": "gambar/wayguruh6.jpg",
+        "Foto7": "gambar/wayguruh7.jpg",
+        "Akses_Jalan": "<1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.727228223924 -5.23050069920506)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.71021872284,
+          -5.104981337668
+        ]
+      },
+      "properties": {
+        "ID": 16.0,
+        "Nama": "Rest Area Labuhan Ratu 6",
+        "Deskripsi": "Rest Area Labuhan Ratu 6 merupakan tempat istirahat yang nyaman dan strategis di jalur menuju Taman Nasional Way Kambas. Dikelilingi oleh suasana asri pedesaan dan pepohonan rindang, rest area ini menjadi titik singgah ideal bagi wisatawan yang ingin melepas lelah sebelum melanjutkan perjalanan.",
+        "Fasilitas": "Area parkir, gazebo, toilet, dan spot foto.",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "DesaLabuhan Ratu Enam, Kec. Labuhan Ratu, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 3.0,
+        "Ulasan": "2 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Taman+Rest+Area/@-5.1050182,105.707653,17z/data=!3m1!4b1!4m6!3m5!1s0x2e4089789f5e8f19:0xccda506947e432b4!8m2!3d-5.1050235!4d105.7102279!16s%2Fg%2F11gx_ngxlz?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/resarea.jpg",
+        "Foto2": "gambar/resarea2.jpg",
+        "Foto3": "gambar/resarea3.jpg",
+        "Foto4": "gambar/resarea4.jpg",
+        "Foto5": "gambar/resarea5.jpg",
+        "Foto6": "gambar/resarea6.jpg",
+        "Foto7": "gambar/resarea7.jpg",
+        "Akses_Jalan": ">1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.71021872284 -5.104981337668)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.5712526576713,
+          -5.300798526713253
+        ]
+      },
+      "properties": {
+        "ID": 17.0,
+        "Nama": "Taman Purbakala Pugung Raharjo",
+        "Deskripsi": "Taman Purbakala Pugung Raharjo menyimpan jejak sejarah masa lampau dengan koleksi menhir, arca, dan peninggalan zaman megalitikum. Terletak di tengah hamparan alam hijau, situs ini menghadirkan pengalaman wisata edukatif yang membawa pengunjung menelusuri peradaban kuno Lampung.",
+        "Fasilitas": "Area parkir, gazebo, toilet, mushola, terapi ikan, dan kolam pemandian.",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "Desa Pugung Raharjo, Kec. Sekampung Udik, Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 4.4,
+        "Ulasan": "435 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Taman+Purbakala+Pugungraharjo/@-5.3007067,105.571673,17z/data=!4m15!1m8!3m7!1s0x2e40ee3f7ece482b:0xd670ecd545ea7247!2sTaman+Purbakala+Pugungraharjo!8m2!3d-5.3008466!4d105.5712312!10e5!16s%2Fg%2F1yxkhmt6h!3m5!1s0x2e40ee3f7ece482b:0xd670ecd545ea7247!8m2!3d-5.3008466!4d105.5712312!16s%2Fg%2F1yxkhmt6h?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/tamanpurbakala.jpg",
+        "Foto2": "gambar/tamanpurbakala2.jpg",
+        "Foto3": "gambar/tamanpurbakala3.jpg",
+        "Foto4": "gambar/tamanpurbakala4.jpg",
+        "Foto5": "gambar/tamanpurbakala5.jpg",
+        "Foto6": "gambar/tamanpurbakala6.jpg",
+        "Foto7": "gambar/tamanpurbakala7.jpg",
+        "Akses_Jalan": "<1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.5712526576713 -5.300798526713253)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.796856841955,
+          -5.35170007887976
+        ]
+      },
+      "properties": {
+        "ID": 18.0,
+        "Nama": "Sumber Mata Air Awet Muda",
+        "Deskripsi": "Sumber Mata Air Awet Muda adalah destinasi wisata alam yang terkenal dengan kejernihan airnya dan mitos yang menyertainya. Terletak di tengah alam yang masih asri, mata air ini dipercaya memiliki khasiat untuk menjaga kesehatan dan kecantikan, sehingga dijuluki sebagai “awet muda” oleh warga sekitar. Pengunjung dapat menikmati kesegaran air langsung dari sumbernya atau sekadar bersantai menikmati suasana tenang di sekitarnya. Tempat ini juga cocok untuk melepas penat dan menyatu dengan alam.",
+        "Fasilitas": "Kolam pemandian, gazebo dan toilet.",
+        "Jam_Buka": "Setiap hari",
+        "Alamat": "Desa Maringgai, Kec. Labuhan Maringgai, Kabupaten Lampung Timur.",
+        "Tiket_Masuk": "Gratis",
+        "Rating": 4.6,
+        "Ulasan": "19 Ulasan",
+        "Link_Google": "https://www.google.com/maps/place/Taman+Wisata+Pemandian+Ratu+Darah+Putih/@-5.3522235,105.7968783,15z/data=!4m6!3m5!1s0x2e4057f70ced5c2b:0x32e0f725b9f3fd29!8m2!3d-5.3522235!4d105.7968783!16s%2Fg%2F11f_1g1xrf?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+        "Foto": "gambar/air.jpg",
+        "Foto2": "gambar/air2.jpg",
+        "Foto3": "gambar/air3.jpg",
+        "Foto4": "gambar/air4.jpg",
+        "Foto5": "gambar/air5.jpg",
+        "Foto6": "gambar/air6.jpg",
+        "Foto7": "gambar/air7.jpg",
+        "Akses_Jalan": "<1000 M Dari Jalan Utama",
+        "geometry": "POINT (105.796856841955 -5.35170007887976)"
+      }
+    }
+  ]
+}
