@@ -71,58 +71,101 @@ var routingControl = null;
 // ID marker aktif untuk popup rute
 var activeRouteMarkerId = null;
 
-// Layer GeoJSON untuk marker wisata
-var wisatalampungtimur = L.geoJSON(null, {
-  pointToLayer: function (feature, latlng) {
-    
-    function popupTemplate(extra = '') {
-  const {
-    Nama,
-    Deskripsi,
-    Alamat,
-    Jam_Buka,
-    Fasilitas,
-    Tiket_Masuk,
-    Foto,
-    ID
-  } = feature.properties;
-
+// 🔧 Fungsi bantu untuk validasi foto (supaya tidak muncul kotak kosong)
+function buatFotoHTML(foto) {
+  if (!foto || typeof foto !== "string") return '';
+  const f = foto.trim().toLowerCase();
+  if (!f || f === "null" || f === "undefined" || f === "#") return '';
   return `
-    <div class="popup-container">
-      
-      <!-- Judul -->
-      <h5 class="popup-title">${Nama}</h5>
-      
-      <!-- Deskripsi -->
-      <p class="popup-description">${Deskripsi}</p>
-      
-      <!-- Foto -->
-      <img src="${Foto}" alt="Foto Wisata" class="popup-image">
-      
-      <!-- Informasi Teknis -->
-      <div class="popup-info">
-        <b>Alamat:</b> ${Alamat}<br>
-        <b>Jam Buka:</b> ${Jam_Buka}<br>
-        <b>Fasilitas:</b> ${Fasilitas}<br>
-        <b>Tiket Masuk:</b> ${Tiket_Masuk}<br>
-      </div>
-
-      <!-- Tombol Interaksi -->
-      <div class="popup-buttons">
-        <button onclick="tampilkanRute(${latlng.lat}, ${latlng.lng}, ${ID})" class="btn btn-sm btn-primary">
-          Tampilkan Rute
-        </button>
-        <button onclick="hapusRute()" class="btn btn-sm btn-outline-danger">
-          Hapus Rute
-        </button>
-      </div>
-
-      ${extra}
-    </div>
+    <img src="${foto}" alt="Foto" class="popup-image"
+         onerror="this.style.display='none'"
+         onclick="bukaModal('${foto}')"
+         style="flex-shrink: 0; width: 250px; height: 160px; object-fit: cover; border-radius: 8px;">
   `;
 }
 
-    // Membuat marker dan menyimpan popupTemplate untuk dipanggil ulang saat dibutuhkan
+// Layer GeoJSON untuk marker wisata
+var wisatalampungtimur = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+
+    function popupTemplate(extra = '') {
+      const {
+        Nama,
+        Deskripsi,
+        Alamat,
+        Jam_Buka,
+        Fasilitas,
+        Tiket_Masuk,
+        Akses_Jalan,
+        Foto,
+        Foto2,
+        Foto3,
+        Foto4,
+        Foto5,
+        Foto6,
+        Foto7,
+        ID,
+        Rating,
+        Ulasan,
+        Link_Google
+      } = feature.properties;
+
+      return `
+        <div class="popup-container">
+          <!-- Judul -->
+          <h5 class="popup-title">${Nama}</h5>
+
+          <!-- Rating Google -->
+          ${Rating ? `
+            <div class="popup-rating" style="margin-top: 8px;">
+              <span style="color: orange;">⭐ ${Rating}</span> 
+              (${Ulasan || 'tanpa ulasan'})<br>
+              <a href="${Link_Google}" target="_blank" style="color: #007bff; text-decoration: none;">
+                🔗 Lihat di Google Maps
+              </a>
+            </div>
+          ` : ''}
+
+          <!-- Foto -->
+          <div class="popup-photo-wrapper" 
+               style="display: flex; overflow-x: auto; gap: 10px; margin: 10px 0;">
+            ${buatFotoHTML(Foto)}
+            ${buatFotoHTML(Foto2)}
+            ${buatFotoHTML(Foto3)}
+            ${buatFotoHTML(Foto4)}
+            ${buatFotoHTML(Foto5)}
+            ${buatFotoHTML(Foto6)}
+            ${buatFotoHTML(Foto7)}
+          </div>
+
+          <!-- Deskripsi -->
+          <p class="popup-description" style="margin-top: 8px;">${Deskripsi}</p>
+
+          <!-- Informasi Teknis -->
+          <b>Alamat:</b> ${Alamat}<br>
+          <b>Jam Buka:</b> ${Jam_Buka}<br>
+          <b>Fasilitas:</b> ${Fasilitas}<br>
+          <b>Tiket Masuk:</b> ${Tiket_Masuk}<br>
+          <b>Akses Jalan:</b> ${Akses_Jalan}<br>
+
+          <!-- Tombol Interaksi -->
+          <div class="popup-buttons" style="margin-top: 10px;">
+            <button onclick="tampilkanRute(${latlng.lat}, ${latlng.lng}, ${ID})" 
+                    class="btn btn-sm btn-primary">
+              Tampilkan Rute
+            </button>
+            <button onclick="hapusRute()" 
+                    class="btn btn-sm btn-outline-danger">
+              Hapus Rute
+            </button>
+          </div>
+
+          ${extra}
+        </div>
+      `;
+    }
+
+    // Membuat marker dan menyimpan popupTemplate
     var marker = L.marker(latlng).bindPopup(popupTemplate());
     markerMap[feature.properties.ID] = marker;
     marker.popupTemplate = popupTemplate;
@@ -130,6 +173,18 @@ var wisatalampungtimur = L.geoJSON(null, {
     return marker;
   }
 });
+
+
+function bukaModal(src) {
+  var modal = document.getElementById("fotoModal");
+  var modalImg = document.getElementById("fotoModalImg");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function tutupModal() {
+  document.getElementById("fotoModal").style.display = "none";
+}
 
 
 // Memuat file GeoJSON koordinat pariwisata
@@ -155,6 +210,22 @@ fetch('geojeson/wisatalampungtimur.geojson')
   })
   .catch(err => console.error("Error koordinat wisata:", err));
 
+// === LAYER BUFFER JARINGAN JALAN ===
+var Buffer= L.geoJSON(null, {
+  style: function(feature) {
+    return {
+      color: "#ff9933",
+      weight: 1,
+      opacity: 1
+    };
+  }
+});
+
+// Memuat data jalan dari file GeoJSON
+fetch('geojeson/buffer.geojson')
+  .then(res => res.json())
+  .then(data => Buffer.addData(data))
+  .catch(err => console.error("Error buffer:", err));
 
 
 // === FUNGSI TAMPILKAN RUTE ===
@@ -242,7 +313,9 @@ var baseMaps = {
 var overlayMaps = {
   "Batas Administrasi": batasadministrasilamtim,
   "Jaringan Jalan": jaringanJalan,
-  "Koordinat Pariwisata": wisatalampungtimur
+  "Koordinat Pariwisata": wisatalampungtimur,
+  "Buffer Wisata 1000 M" : Buffer,
+  
 };
 
 // Menambahkan kontrol layer ke peta
